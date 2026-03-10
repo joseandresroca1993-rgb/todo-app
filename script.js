@@ -337,3 +337,15 @@ document.getElementById("exportar").addEventListener("click", () => {
     a.click();
 
 });
+
+
+// ======== LIMPIAR TODO =========
+document.getElementById("limpiarTodo").addEventListener("click", () => {
+
+    if (!confirm("¿Seguro que quieres borrar todas las tareas?")) return;
+
+    tareas = [];
+    guardarTareas();
+    renderizar();
+
+});
