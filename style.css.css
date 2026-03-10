@@ -1,0 +1,198 @@
+/* =========================
+   CUERPO
+========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a7e0a1;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.contenedor {
+  width: 350px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   INPUT Y BOTONES
+========================= */
+
+input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   FILTROS
+========================= */
+
+.filtros {
+  margin: 15px 0;
+}
+
+.filtros button {
+  margin-right: 5px;
+}
+
+/* =========================
+   LISTA
+========================= */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 6px 0;
+  background: #f4f4f4;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: #e8f5e9;
+  transform: scale(1.02);
+}
+
+li button {
+  padding: 4px 8px;
+}
+
+li button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #ff5c5c;
+  color: white;
+  font-size: 14px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+li button:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+/* =========================
+   ESTADO COMPLETADA
+========================= */
+
+.completada {
+  text-decoration: line-through;
+  color: #aaa;
+  transform: scale (0.98);
+  transition: all 0.25s ease;
+}
+
+/* =========================
+   MODO OSCURO
+========================= */
+
+body.dark {
+  background-color: #1e1e1e;
+}
+
+body.dark .contenedor {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+body.dark li {
+  background-color: #3a3a3a;
+}
+
+body.dark input {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+/*===== ANIMACIÓN ELIMINAR ===== */
+
+.eliminando {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 0.03s ease;
+}
+
+/*======= BUSCADOR =======*/
+#buscador {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.prioridad-alta {
+  border-left: 6px solid red;
+}
+
+.prioridad-media {
+  border-left: 6px solid orange;
+}
+
+.prioridad-baja {
+  border-left: 6px solid green;
+}
+
+.tarea-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tarea-derecha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fecha-tarea {
+  font-size: 12px;
+  color: #666;
+}
+
+.prioridades {
+  display: flex;
+  gap: 4px;
+}
+
+.tarea-vencida {
+  border-left: 6px solid red;
+  background:#ffe5e5;
+}
+
+#contadorVencidas {
+  color: #c0392b;
+  font-weight: bold;
+}
